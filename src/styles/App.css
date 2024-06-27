@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.containerInputs {
+  margin-top: 10px;
+  background-color: rgb(214, 210, 210);
+  border: 1px solid rgb(214, 210, 210);
+  border-radius: 15px;
+}
