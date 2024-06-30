@@ -7,7 +7,9 @@ import ExperienceInfo from "./components/ExperienceInfo.js"
 
 function App() {
   const [personalData, setPersonalData] = useState({ name: '', email: '', phone: '' });
-  const [educationData, setEducationData] = useState({ schoolName: '', schoolTitle: '', schoolDate: '' });
+  const [educationData, setEducationData] = useState({ schoolName: '', schoolTitle: '', schoolStartDate: '', schoolConclusionDate: ''});
+  const [experienceData, setExperienceData] = useState({ companyName: '', companyTitle: '', mainResponsibilities: '', startDate: '', resignationDate: ''});
+
 
   const handlePersonalSubmit = (data) => {
     setPersonalData(data);
@@ -18,7 +20,7 @@ function App() {
   };
 
   const handleExperienceSubmit = (data) => {
-    setEducationData(data);
+    setExperienceData(data);
   };
 
   return (
@@ -29,7 +31,7 @@ function App() {
       <EducationInfo onSubmit={handleEducationSubmit} />
       <h3>Experience</h3>
       <ExperienceInfo onSubmit={handleExperienceSubmit} />
-      <ContainerInfo personalData={personalData} educationData={educationData} />
+      <ContainerInfo personalData={personalData} educationData={educationData} experienceData={experienceData}/>
     </>
   );
 }
