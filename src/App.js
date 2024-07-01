@@ -25,11 +25,8 @@ function App() {
 
   return (
     <>
-      <h3>Personal Info</h3>
       <PersonalInfo onSubmit={handlePersonalSubmit} />
-      <h3>Education</h3>
       <EducationInfo onSubmit={handleEducationSubmit} />
-      <h3>Experience</h3>
       <ExperienceInfo onSubmit={handleExperienceSubmit} />
       <ContainerInfo personalData={personalData} educationData={educationData} experienceData={experienceData}/>
     </>
