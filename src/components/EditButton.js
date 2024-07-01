@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-const useEditButton = (setButtonState, setButtonEditState) => {
+const useEditButton = (setButtonState, setButtonEditState, className) => {
   useEffect(() => {
-    const editButton = document.querySelector(".editButton");
+    const editButton = document.querySelector(`.${className}`);
     if (editButton) {
       const handleClick = (e) => {
         e.preventDefault();
@@ -16,7 +16,7 @@ const useEditButton = (setButtonState, setButtonEditState) => {
         editButton.removeEventListener("click", handleClick);
       };
     }
-  }, [setButtonState, setButtonEditState]);
+  }, [setButtonState, setButtonEditState, className]);
 };
 
 export default useEditButton;
