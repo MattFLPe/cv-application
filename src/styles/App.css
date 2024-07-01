@@ -2,12 +2,35 @@ body {
   text-align: center;
 }
 
+
 .containerForm {
   display: flex;
   flex-direction: column;
   width: 200px;
+  padding: 20px;
   margin: 0 auto;
+  gap: 10px;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
 }
+
+.containerFormEd, .containerFormExp {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 40px;
+  width: 150px;
+  gap: 10px;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+}
+
+.containerFormExp {
+  margin-bottom: 50px;
+}
+
 
 .button {
   margin-top: 10px;
@@ -15,7 +38,14 @@ body {
 
 .containerInputs {
   margin-top: 10px;
-  background-color: rgb(214, 210, 210);
-  border: 1px solid rgb(214, 210, 210);
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
+  margin: 20px;
+  padding-bottom: 30px;
+}
+
+textarea {
+  max-width: 100%; 
+  max-height: 100%;
 }
