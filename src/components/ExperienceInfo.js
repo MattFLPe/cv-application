@@ -72,11 +72,6 @@ return (
                 disabled={buttonEditState}
                 >Edit
                 </button>
-                <button 
-                className="experienceInfoEditButton"
-                type="button"
-                >Add +
-                </button>
             </div>
         </div>
     </form>
