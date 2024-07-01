@@ -28,6 +28,7 @@ export default function PersonalInfo({ onSubmit }) {
     return (
         <form onSubmit={handleSubmit}>
           <div className="containerForm">
+          <h3>Personal Info</h3>
             <GenericInput
               label="Name"
               type="text"

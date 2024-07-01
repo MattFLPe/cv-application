@@ -22,6 +22,7 @@ export default function EducationInfo({ onSubmit }) {
     return (
         <form onSubmit={handleSubmit}>
           <div className="containerFormEd">
+          <h3>Education</h3>
             <GenericInput
               label="School"
               type="text"

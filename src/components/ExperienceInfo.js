@@ -24,6 +24,7 @@ useEditButton(setButtonState, setButtonEditState, "experienceInfoEditButton");
 return (
     <form onSubmit={handleSubmit}>
         <div className="containerFormExp">
+        <h3>Experience</h3>
             <GenericInput
               label="Company"
               type="text"
