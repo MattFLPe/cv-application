@@ -2,17 +2,20 @@ body {
   text-align: center;
 }
 
-
 .containerForm {
   display: flex;
   flex-direction: column;
   width: 200px;
-  padding: 20px;
+  padding: 50px;
   margin: 0 auto;
   gap: 10px;
   background-color: rgb(247, 247, 247);
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
+}
+
+input {
+  width: 150px;
 }
 
 .containerFormEd, .containerFormExp {
@@ -25,12 +28,12 @@ body {
   background-color: rgb(247, 247, 247);
   border: 1px solid rgb(0, 0, 0);
   border-radius: 15px;
+  text-align: center;
 }
 
 .containerFormExp {
   margin-bottom: 50px;
 }
-
 
 .button {
   margin-top: 10px;
@@ -49,3 +52,4 @@ textarea {
   max-width: 100%; 
   max-height: 100%;
 }
+
