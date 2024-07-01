@@ -1,5 +1,3 @@
-import EducationInfo from "./EducationInfo"
-
 export default function ContainerInfo({ personalData, educationData, experienceData }) {
 
 return(
