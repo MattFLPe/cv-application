@@ -1,4 +1,4 @@
-export default function GenericInput({ label, type, value, onChange }) {
+export default function GenericInput({ label, type, value, onChange, disabled }) {
     return (
         <label>
             {label}:
@@ -6,6 +6,7 @@ export default function GenericInput({ label, type, value, onChange }) {
                 type={type}
                 value={value} 
                 onChange={(e) => onChange(e.target.value)}
+                disabled={disabled}
             />
         </label>
     )
